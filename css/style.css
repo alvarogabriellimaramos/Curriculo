@@ -47,15 +47,17 @@ main .container h2{
 }
 footer {
     display: flex;
+    
     align-items: center;
     background-color: black;
-    
+    min-width: 400px;
 }
 footer img {
     width: 50px;
 }
 footer .adicionais{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding: 10px;
@@ -75,10 +77,7 @@ footer .adicionais div a {
     text-decoration: none;
     color: #0efff9;
 }
-footer #text{
-    position: relative;
-    top: -20px;
-}
+
 footer .adicionais div a::before{
     content: '';
     position: absolute;
@@ -94,10 +93,13 @@ footer .adicionais div a:hover::before{
     width: 100%;
     
 }
-@media (max-width:600px){
+footer #text{
+    position: relative;
+    top: -20px;
+}
+@media (max-width:1120px){
     .container div {
         border-radius: 0;
-        
         width: 100%;
         min-width: 400px;
     }

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5vh;
+    width: 100%;
+    min-width: 400px;
+}
+header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 2vh;
+}
+main{
+    min-width: 400px;
+}
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    line-height: 2rem;
+    padding: 10px;
+    min-width: 400px;
+    margin: auto;
+    background-color: #0efff9;
+}
+main .container div{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 0 5px #ccc;
+}
+main .container h2{
+    margin-bottom: .5vh;
+}
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    
+}
+footer img {
+    width: 50px;
+}
+footer .adicionais{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+}
+footer .adicionais div{
+    display: flex;
+    
+    align-items: center;
+    font-size: 1.1em;
+   
+    padding: 10px;
+}
+footer .adicionais div a {
+    position: relative;
+    text-decoration: none;
+    color: #0efff9;
+}
+footer #text{
+    position: relative;
+    top: -20px;
+}
+footer .adicionais div a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#320d0f,#206fd8,#d6dbed);
+    height: 2px;
+    
+    width: 0;
+    transition: .4s;
+}
+footer .adicionais div a:hover::before{
+    width: 100%;
+    
+}
+@media (max-width:600px){
+    .container div {
+        border-radius: 0;
+        
+        width: 100%;
+        min-width: 400px;
+    }
+    footer .adicionais{
+        flex-direction: column;
+        text-align: center;
+    }
+}
